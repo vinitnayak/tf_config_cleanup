@@ -7,10 +7,10 @@ var ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const APP_DIR = path.resolve(__dirname, 'src');
 module.exports ={
     entry: [	
-		APP_DIR + '/cf_index.js' // Your appʼs entry point
+		APP_DIR + '/tf_index.js' // Your appʼs entry point
     ],
     output: {
-        filename: 'cfBundle.js',
+        filename: 'tfBundle.js',
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/'
     },
@@ -66,7 +66,7 @@ module.exports ={
         new CopyWebpackPlugin([
             { from: './index.html', to: '../dist/index.html' },
             { from: './manifest.json', to: '../dist/manifest.json' },
-            { from: './cf.json', to: '../dist/cf.json' },
+            { from: './tf.json', to: '../dist/tf.json' },
             {
                 context: './res',
                 from: '**/*',
@@ -74,7 +74,7 @@ module.exports ={
             }
         ]),  
         new CleanWebpackPlugin(['dist/*.*', 'dist/res', 'dist/src']),
-        new ExtractTextPlugin({filename: 'cfBundle.css', allChunks: true}),
+        new ExtractTextPlugin({filename: 'tfBundle.css', allChunks: true}),
         new ProgressBarPlugin()
     ]
 };

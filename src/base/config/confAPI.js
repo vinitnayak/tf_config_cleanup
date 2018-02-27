@@ -1,5 +1,5 @@
 export async function getApiUrl () {
-        const response = await fetch('./cf.json');
+        const response = await fetch('./tf.json');
         const json = await response.json();
         return json;
 }

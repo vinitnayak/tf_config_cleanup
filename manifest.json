@@ -1,15 +1,15 @@
 {
-    "id": "5a4f99a6-dc55-4f8d-955c-35385c9e90a1",
-    "name": "ComplianceFactory",
-    "desc": " ComplianceFactory",
-    "badge": "cf",
-    "bundleName": "cfBundle.js",
+    "id": "955eaee7-e422-45a6-a81d-0baa220399db",
+    "name": "TaxFactory",
+    "desc": " TaxFactory",
+    "badge": "tf",
+    "bundleName": "tfBundle.js",
     "version": "1",
-    "buildNo":"2018_02_22_CF",
+    "buildNo":"2018_02_27_TF",
     "renderFunction": "renderApplication",
     "macVersion":"1.0", 
     "areas": [ {
-        "id":"bbd90ab7-2a84-4ad3-998e-705dbc73cdac",
+        "id":"b9c59988-159b-4df9-8e58-74b52bc49e94",
         "groupId":"Group1", 
         "title": "Add Employee",
         "icon": "fas fa-user",
@@ -17,7 +17,7 @@
         "renderName": "addemployee",
         "visible": true
     },{
-        "id":"e3344a6f-580f-4661-963e-a49ffd184b29",
+        "id":"ac9310d1-2434-45dd-ae40-0b9b1b70673c",
         "name":"Employee Grid",
         "groupId":"Group1", 
         "title": "Employee List Grid",
@@ -25,30 +25,5 @@
         "tooltip": "Employee List Grid",
         "renderName": "employeegrid",
         "visible": true
-    },
-    {
-        "id":"cc965204-5c21-403d-a706-cd00f863578f",
-        "name":"Maintain Payroll Data",
-        "groupId":"Group1", 
-        "title": "Maintain Payroll Data",
-        "icon":"fas fa-filter fa-sm",
-        "tooltip": "Maintain Payroll Data",
-        "renderName": "filterpayrolldata",
-        "visible": true
-    }],
-    "widgets": [{
-        "id":"6a5a3e8d-7810-41bb-9025-20a955659279",
-        "name":"Monthly Payments",
-        "groupId":"Group1", 
-        "title": "Monthly Payments Chart",
-        "icon":"far fa-chart-bar",
-        "tooltip": "Monthly Payments to User",
-        "renderName": "monthlypaymentschart",
-        "visible": true
-    }],
-    "search": [{
-        "id":"8536fa8e-a2c9-42d0-af52-bbb25a12d911",
-        "renderName": "searchAppModule",
-        "entities":[{"case":{"abbr":"c", "fields":["caseId","name","authority"]}}]
     }]
 }

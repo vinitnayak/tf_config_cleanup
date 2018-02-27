@@ -156,12 +156,10 @@
         <li>
           <a href="#" onclick="return loadspa('spa4')"><span class="nav-label"><i class="fas fa-user"></i> Add Employee</span></a>
           <a href="#" onclick="return loadspa('spa2')"><span class="nav-label"><i class="far fa-calendar-alt"></i> Employee Grid</span></a>
-          <a href="#" onclick="return loadspa('spa3')"><span class="nav-label"><i class="far fa-chart-bar"></i> Monthly Payments Chart</span></a>
-          <a href="#" onclick="return loadspa('spa10')"><span class="nav-label"><i class="fas fa-filter fa-sm"></i> Maintain Payroll Data</span></a>
         </li>
       </ul>
     </nav>
-    <div id = "_compliancefactory_id" class="main-content"></div>
+    <div id = "_tffactory_id" class="main-content"></div>
     <script  type="text/javascript" src="./res/js/react.production.min.js"></script>
     <script  type="text/javascript" src="./res/js/react-dom.production.min.js"></script>
     <script  type="text/javascript" src="./res/js/redux.min.js"></script>
@@ -169,28 +167,24 @@
     <script  type="text/javascript" src="./res/js/redux-form.min.js"></script>
     <script  type="text/javascript" src="./res/js/redux-thunk.min.js"></script>
     <script  type="text/javascript" src="./res/js/prop-types.min.js"></script>
-    <script type="text/javascript" src="cfBundle.js"></script>
+    <script type="text/javascript" src="tfBundle.js"></script>
     <script type="text/javascript">
       function loadspa(spa) {
           unMountNMountContainerNode();
           if(spa=='spa2'){
-            renderApplication('_compliancefactory_id','employeegrid');
-          }else if(spa=='spa3'){
-            renderApplication('_compliancefactory_id','monthlypaymentschart');
+            renderApplication('_tffactory_id','employeegrid');
           }else if(spa=='spa4'){
-            renderApplication('_compliancefactory_id','addemployee');
-          }else if(spa=='spa10'){
-            renderApplication('_compliancefactory_id','filterpayrolldata');
+            renderApplication('_tffactory_id','addemployee');
           }else{
-            renderWelcomePage('_compliancefactory_id');
+            renderWelcomePage('_tffactory_id');
           }
       }
       function renderWelcomePage(elem){
         document.getElementById(elem).innerHTML="<h3>Welcome to the Application Module Test Page. Please click on the links to load your single page application.</h4>";
       }
       function unMountNMountContainerNode(){
-        $("div").remove("#_compliancefactory_id");
-        $("<div id=\"_compliancefactory_id\" class=\"main-content\"></div>").insertAfter( $("#navid"));
+        $("div").remove("#_tffactory_id");
+        $("<div id=\"_tffactory_id\" class=\"main-content\"></div>").insertAfter( $("#navid"));
     }
      </script>
     </body>

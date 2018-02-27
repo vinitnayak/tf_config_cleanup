@@ -1,0 +1,20 @@
+button {
+    background: red;
+    border-radius: 8px;
+    color: white;
+}
+
+.small {
+    height: 40px;
+    width: 80px;
+}
+
+.medium {
+    height: 50px;
+    width: 100px;
+}
+
+.largebtun {
+    height: 60px;
+    width: 120px;
+}

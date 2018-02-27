@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+    <meta charset = "UTF-8">
+    <title>ComplianceFactory Head</title>
+    <link rel="stylesheet" href="./res/js/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link href="./res/css/fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./res/js/jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxdata.export.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxgrid.export.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxscrollbar.js"></script>
+
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxlistbox.js"></script>
+
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxbuttongroup.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxradiobutton.js"></script>
+    
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxgrid.sort.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxgrid.pager.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxgrid.selection.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxgrid.edit.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxgrid.columnsresize.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxgrid.filter.js"></script>
+    
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxdatetimeinput.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxcalendar.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxtooltip.js"></script>
+    <script type="text/javascript" src="./res/js/jqwidgets/globalization/globalize.js"></script>
+
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxchart.js"></script>
+
+    <script type="text/javascript" src="./res/js/jqwidgets/jqxcore.js"></script>
+
+    <style>
+      .navbar-global {
+        background-color: rgb(83, 83, 83);
+      }
+    
+      .navbar-global .navbar-brand {
+        color: white;
+      }
+    
+      .navbar-global .navbar-user>li>a {
+        color: white;
+      }
+    
+      .navbar-primary {
+        background-color: #333;
+        bottom: 0px;
+        left: 0px;
+        position: absolute;
+        top: 56px;
+        width: 200px;
+        z-index: 8;
+        overflow: hidden;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+      }
+    
+      .navbar-primary.collapsed {
+        width: 60px;
+      }
+    
+      .navbar-primary.collapsed .glyphicon {
+        font-size: 22px;
+      }
+    
+      .navbar-primary.collapsed .nav-label {
+        display: none;
+      }
+    
+      .btn-expand-collapse {
+        position: absolute;
+        display: block;
+        left: 0px;
+        bottom: 0;
+        width: 100%;
+        padding: 8px 0;
+        border-top: solid 1px #666;
+        color: grey;
+        font-size: 20px;
+        text-align: center;
+      }
+    
+      .btn-expand-collapse:hover,
+      .btn-expand-collapse:focus {
+        background-color: #222;
+        color: white;
+      }
+    
+      .btn-expand-collapse:active {
+        background-color: #111;
+      }
+    
+      .navbar-primary-menu,
+      .navbar-primary-menu li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+    
+      .navbar-primary-menu li a {
+        display: block;
+        padding: 10px 18px;
+        text-align: left;
+        border-bottom: solid 1px #444;
+        color: #ccc;
+      }
+    
+      .navbar-primary-menu li a:hover {
+        background-color: #000;
+        text-decoration: none;
+        color: white;
+      }
+    
+      .navbar-primary-menu li a .glyphicon {
+        margin-right: 6px;
+      }
+    
+      .navbar-primary-menu li a:hover .glyphicon {
+        color: orchid;
+      }
+    
+      .main-content {
+        margin-top: 60px;
+        margin-left: 200px;
+        padding: 20px;
+      }
+    
+      .collapsed+.main-content {
+        margin-left: 60px;
+      }
+    </style>
+   </head>
+   <body onload="loadspa();">
+      <nav class="navbar navbar-inverse navbar-global navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#" onclick="loadspa();"><i class="fas fa-home"></i>  Application Module UI</a>
+            </div>
+          </div>
+        </nav>
+      <nav class="navbar-primary" id="navid">
+      <a href="#" class="btn-expand-collapse"><span class="glyphicon glyphicon-menu-left"></span></a>
+      <ul class="navbar-primary-menu">
+        <li>
+          <a href="#" onclick="return loadspa('spa4')"><span class="nav-label"><i class="fas fa-user"></i> Add Employee</span></a>
+          <a href="#" onclick="return loadspa('spa2')"><span class="nav-label"><i class="far fa-calendar-alt"></i> Employee Grid</span></a>
+          <a href="#" onclick="return loadspa('spa3')"><span class="nav-label"><i class="far fa-chart-bar"></i> Monthly Payments Chart</span></a>
+          <a href="#" onclick="return loadspa('spa10')"><span class="nav-label"><i class="fas fa-filter fa-sm"></i> Maintain Payroll Data</span></a>
+        </li>
+      </ul>
+    </nav>
+    <div id = "_compliancefactory_id" class="main-content"></div>
+    <script  type="text/javascript" src="./res/js/react.production.min.js"></script>
+    <script  type="text/javascript" src="./res/js/react-dom.production.min.js"></script>
+    <script  type="text/javascript" src="./res/js/redux.min.js"></script>
+    <script  type="text/javascript" src="./res/js/react-redux.min.js"></script>
+    <script  type="text/javascript" src="./res/js/redux-form.min.js"></script>
+    <script  type="text/javascript" src="./res/js/redux-thunk.min.js"></script>
+    <script  type="text/javascript" src="./res/js/prop-types.min.js"></script>
+    <script type="text/javascript" src="cfBundle.js"></script>
+    <script type="text/javascript">
+      function loadspa(spa) {
+          unMountNMountContainerNode();
+          if(spa=='spa2'){
+            renderApplication('_compliancefactory_id','employeegrid');
+          }else if(spa=='spa3'){
+            renderApplication('_compliancefactory_id','monthlypaymentschart');
+          }else if(spa=='spa4'){
+            renderApplication('_compliancefactory_id','addemployee');
+          }else if(spa=='spa10'){
+            renderApplication('_compliancefactory_id','filterpayrolldata');
+          }else{
+            renderWelcomePage('_compliancefactory_id');
+          }
+      }
+      function renderWelcomePage(elem){
+        document.getElementById(elem).innerHTML="<h3>Welcome to the Application Module Test Page. Please click on the links to load your single page application.</h4>";
+      }
+      function unMountNMountContainerNode(){
+        $("div").remove("#_compliancefactory_id");
+        $("<div id=\"_compliancefactory_id\" class=\"main-content\"></div>").insertAfter( $("#navid"));
+    }
+     </script>
+    </body>
+</html>

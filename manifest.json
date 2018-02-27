@@ -1,0 +1,54 @@
+{
+    "id": "5a4f99a6-dc55-4f8d-955c-35385c9e90a1",
+    "name": "ComplianceFactory",
+    "desc": " ComplianceFactory",
+    "badge": "cf",
+    "bundleName": "cfBundle.js",
+    "version": "1",
+    "buildNo":"2018_02_22_CF",
+    "renderFunction": "renderApplication",
+    "macVersion":"1.0", 
+    "areas": [ {
+        "id":"bbd90ab7-2a84-4ad3-998e-705dbc73cdac",
+        "groupId":"Group1", 
+        "title": "Add Employee",
+        "icon": "fas fa-user",
+        "tooltip": "Add Employee",
+        "renderName": "addemployee",
+        "visible": true
+    },{
+        "id":"e3344a6f-580f-4661-963e-a49ffd184b29",
+        "name":"Employee Grid",
+        "groupId":"Group1", 
+        "title": "Employee List Grid",
+        "icon":"far fa-calendar-alt",
+        "tooltip": "Employee List Grid",
+        "renderName": "employeegrid",
+        "visible": true
+    },
+    {
+        "id":"cc965204-5c21-403d-a706-cd00f863578f",
+        "name":"Maintain Payroll Data",
+        "groupId":"Group1", 
+        "title": "Maintain Payroll Data",
+        "icon":"fas fa-filter fa-sm",
+        "tooltip": "Maintain Payroll Data",
+        "renderName": "filterpayrolldata",
+        "visible": true
+    }],
+    "widgets": [{
+        "id":"6a5a3e8d-7810-41bb-9025-20a955659279",
+        "name":"Monthly Payments",
+        "groupId":"Group1", 
+        "title": "Monthly Payments Chart",
+        "icon":"far fa-chart-bar",
+        "tooltip": "Monthly Payments to User",
+        "renderName": "monthlypaymentschart",
+        "visible": true
+    }],
+    "search": [{
+        "id":"8536fa8e-a2c9-42d0-af52-bbb25a12d911",
+        "renderName": "searchAppModule",
+        "entities":[{"case":{"abbr":"c", "fields":["caseId","name","authority"]}}]
+    }]
+}

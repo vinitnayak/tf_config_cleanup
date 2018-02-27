@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[object Object] 1`] = `
+<tbody>
+  <tbody>
+    <tr>
+      <td>
+        Loading..
+      </td>
+    </tr>
+  </tbody>
+</tbody>
+`;
+
+exports[`Employee rows renders correctly renders correctly 1`] = `
+<tbody>
+  <tr>
+    <td>
+      1
+    </td>
+    <td>
+      Test First Name
+    </td>
+    <td>
+      Test Last Name
+    </td>
+    <td>
+      testemail@email.com
+    </td>
+    <td>
+      <button
+        className="btn btn-default"
+        onClick={[Function]}
+      >
+        Delete me!
+      </button>
+    </td>
+  </tr>
+</tbody>
+`;

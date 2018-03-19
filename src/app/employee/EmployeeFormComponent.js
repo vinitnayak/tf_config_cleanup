@@ -30,7 +30,8 @@ class EmployeeFormComponent extends Component {
 	render() {
 		//const { handleSubmit} = this.props
 		return (
-			<div className="cBox boxTools col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+			<div class="row justify-content-center">
+            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
             <h1>Add Employee</h1>
             <form onSubmit={this.props.handleSubmit((event)=>this.mySubmit(event))}>
                 <Field name="first_name" label="First Name" component={renderField} type="text"/>
@@ -39,6 +40,7 @@ class EmployeeFormComponent extends Component {
                 <button type="submit" className="btn btn-primary">Add Employee</button>
             </form>
             </div>
+			</div>
 		)
 	}
 }

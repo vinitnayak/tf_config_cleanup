@@ -1,8 +1,9 @@
 /*
-jQWidgets v5.1.0 (2017-Aug)
+jQWidgets v5.6.0 (2018-Feb)
 Copyright (c) 2011-2017 jQWidgets.
-License: http://jqwidgets.com/license/
+License: https://jqwidgets.com/license/
 */
+
 import React from 'react';
 
 const JQXLite = window.JQXLite;
@@ -15,7 +16,7 @@ export default class JqxScheduler extends React.Component {
         this.createComponent(options);
     };
     manageAttributes() {
-        let properties = ['appointmentOpacity','appointmentsMinHeight','appointmentDataFields','appointmentTooltips','columnsHeight','contextMenu','contextMenuOpen','contextMenuClose','contextMenuItemClick','contextMenuCreate','changedAppointments','disabled','date','dayNameFormat','enableHover','editDialog','editDialogDateTimeFormatString','editDialogDateFormatString','editDialogOpen','editDialogCreate','editDialogKeyDown','editDialogClose','exportSettings','height','legendPosition','legendHeight','localization','min','max','ready','renderAppointment','rendering','rendered','rtl','resources','rowsHeight','showToolbar','showLegend','scrollBarSize','source','statuses','touchRowsHeight','theme','touchAppointmentsMinHeight','touchScrollBarSize','timeZone','touchDayNameFormat','toolBarRangeFormat','toolBarRangeFormatAbbr','toolbarHeight','views','view','width'];
+        let properties = ['appointmentOpacity','appointmentsMinHeight','appointmentDataFields','appointmentTooltips','columnsHeight','contextMenu','contextMenuOpen','contextMenuClose','contextMenuItemClick','contextMenuCreate','changedAppointments','disabled','date','dayNameFormat','enableHover','editDialog','editDialogDateTimeFormatstring','editDialogDateFormatstring','editDialogOpen','editDialogCreate','editDialogKeyDown','editDialogClose','exportSettings','height','legendPosition','legendHeight','localization','min','max','ready','renderAppointment','rendering','rendered','rtl','resources','rowsHeight','showToolbar','showLegend','scrollBarSize','source','statuses','touchRowsHeight','theme','touchAppointmentsMinHeight','touchScrollBarSize','timeZone','touchDayNameFormat','toolBarRangeFormat','toolBarRangeFormatAbbr','toolbarHeight','views','view','width'];
         let options = {};
         for(let item in this.props) {
               if(item === 'settings') {
@@ -178,18 +179,18 @@ export default class JqxScheduler extends React.Component {
             return JQXLite(this.componentSelector).jqxScheduler('editDialog');
         }
     };
-    editDialogDateTimeFormatString(arg) {
+    editDialogDateTimeFormatstring(arg) {
         if (arg !== undefined) {
-            JQXLite(this.componentSelector).jqxScheduler('editDialogDateTimeFormatString', arg)
+            JQXLite(this.componentSelector).jqxScheduler('editDialogDateTimeFormatstring', arg)
         } else {
-            return JQXLite(this.componentSelector).jqxScheduler('editDialogDateTimeFormatString');
+            return JQXLite(this.componentSelector).jqxScheduler('editDialogDateTimeFormatstring');
         }
     };
-    editDialogDateFormatString(arg) {
+    editDialogDateFormatstring(arg) {
         if (arg !== undefined) {
-            JQXLite(this.componentSelector).jqxScheduler('editDialogDateFormatString', arg)
+            JQXLite(this.componentSelector).jqxScheduler('editDialogDateFormatstring', arg)
         } else {
-            return JQXLite(this.componentSelector).jqxScheduler('editDialogDateFormatString');
+            return JQXLite(this.componentSelector).jqxScheduler('editDialogDateFormatstring');
         }
     };
     editDialogOpen(arg) {

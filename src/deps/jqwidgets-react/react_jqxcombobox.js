@@ -1,8 +1,9 @@
 /*
-jQWidgets v5.1.0 (2017-Aug)
+jQWidgets v5.6.0 (2018-Feb)
 Copyright (c) 2011-2017 jQWidgets.
-License: http://jqwidgets.com/license/
+License: https://jqwidgets.com/license/
 */
+
 import React from 'react';
 
 const JQXLite = window.JQXLite;
@@ -442,8 +443,8 @@ export default class JqxComboBox extends React.Component {
     selectItem(item) {
         JQXLite(this.componentSelector).jqxComboBox('selectItem', item);  
     };
-    searchString() {
-        return JQXLite(this.componentSelector).jqxComboBox('searchString');  
+    searchstring() {
+        return JQXLite(this.componentSelector).jqxComboBox('searchstring');  
     };
     updateItem(item, itemValue) {
         JQXLite(this.componentSelector).jqxComboBox('updateItem', item, itemValue);  

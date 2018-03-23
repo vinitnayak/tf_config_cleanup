@@ -1,8 +1,9 @@
 /*
-jQWidgets v5.1.0 (2017-Aug)
+jQWidgets v5.6.0 (2018-Feb)
 Copyright (c) 2011-2017 jQWidgets.
-License: http://jqwidgets.com/license/
+License: https://jqwidgets.com/license/
 */
+
 import React from 'react';
 
 const JQXLite = window.JQXLite;
@@ -153,11 +154,11 @@ export default class JqxComplexInput extends React.Component {
     destroy() {
         JQXLite(this.componentSelector).jqxComplexInput('destroy');  
     };
-    getReal(complexNumber) {
-        return JQXLite(this.componentSelector).jqxComplexInput('getReal', complexNumber);  
+    getReal(complexnumber) {
+        return JQXLite(this.componentSelector).jqxComplexInput('getReal', complexnumber);  
     };
-    getImaginary(complexNumber) {
-        return JQXLite(this.componentSelector).jqxComplexInput('getImaginary', complexNumber);  
+    getImaginary(complexnumber) {
+        return JQXLite(this.componentSelector).jqxComplexInput('getImaginary', complexnumber);  
     };
     getDecimalNotation(part, type) {
         return JQXLite(this.componentSelector).jqxComplexInput('getDecimalNotation', part, type);  

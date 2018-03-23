@@ -1,8 +1,9 @@
 /*
-jQWidgets v5.1.0 (2017-Aug)
+jQWidgets v5.6.0 (2018-Feb)
 Copyright (c) 2011-2017 jQWidgets.
-License: http://jqwidgets.com/license/
+License: https://jqwidgets.com/license/
 */
+
 import React from 'react';
 
 const JQXLite = window.JQXLite;
@@ -226,8 +227,8 @@ export default class JqxTooltip extends React.Component {
     destroy() {
         JQXLite(this.componentSelector).jqxTooltip('destroy');  
     };
-    open() {
-        JQXLite(this.componentSelector).jqxTooltip('open');  
+    open(left, top) {
+        JQXLite(this.componentSelector).jqxTooltip('open', left, top);  
     };
     refresh() {
         JQXLite(this.componentSelector).jqxTooltip('refresh');  

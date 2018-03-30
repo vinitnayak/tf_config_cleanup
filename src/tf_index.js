@@ -7,21 +7,14 @@ import configureStore from './base/config/configureStore';
 import GrdReportComponent from './app/employee/GrdReportComponent.jsx';
 import EmployeeFormContainer from './app/employee/EmployeeFormContainer';
 
-import {getApiUrl} from './base/config/confAPI';
-import {getAppConf} from './base/config/confAction';
 import {loadEmployees} from './app/employee/employeeAction';
 
 import * as rname from './base/constants/RenderNames';
 
 let store = configureStore();
 
-getApiUrl().then(appconf => {
-    console.log(appconf);
-    store.dispatch(getAppConf(appconf));
-    store.dispatch(loadEmployees());
-}).catch(error => {
-    throw (error);
-});
+store.dispatch(loadEmployees());
+
 /**
  * renderApplication 
  * tf master branch

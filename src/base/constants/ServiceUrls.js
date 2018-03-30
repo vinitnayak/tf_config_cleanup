@@ -1,1 +1,1 @@
-export const EMPLOYEES_URL='employees/'
+export const EMPLOYEES_URL='/employees/'

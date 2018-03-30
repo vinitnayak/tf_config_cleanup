@@ -25,7 +25,7 @@ export function loadEmployees() {
     //authenticateWS();
     return function(dispatch,getState) {
         const state = getState();
-        return employeeApi.getAllEmployee(state.appconf.SVCS_CONTEXT_URL).then(emps => {
+        return employeeApi.getAllEmployee().then(emps => {
           dispatch(loadEmployeeSuccess(emps));
         }).catch(error => {
           throw(error);

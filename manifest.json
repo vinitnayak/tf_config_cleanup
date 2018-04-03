@@ -1,7 +1,7 @@
 {
     "id": "955eaee7-e422-45a6-a81d-0baa220399db",
-    "name": "TaxFactory",
-    "desc": " TaxFactory",
+    "name": "Tax Factory",
+    "desc": "Tax Factory",
     "badge": "tf",
     "bundleName": "tfBundle.js",
     "version": "1",

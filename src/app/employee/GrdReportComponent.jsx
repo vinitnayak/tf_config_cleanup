@@ -5,7 +5,7 @@ class ReportComponent extends Component {
     render(){
         return (
             <div>
-            <h1>Employee List Grid</h1>
+            <h3 class="text-bsi">Employee List Grid</h3>
             <JqGridReport/>
             </div>
         );

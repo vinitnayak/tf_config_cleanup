@@ -32,7 +32,7 @@ class EmployeeFormComponent extends Component {
 		return (
 			<div class="row justify-content-center">
             <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-            <h1>Add Employee</h1>
+            <h3 class="text-bsi">Add Employee</h3>
             <form onSubmit={this.props.handleSubmit((event)=>this.mySubmit(event))}>
                 <Field name="first_name" label="First Name" component={renderField} type="text"/>
                 <Field name="last_name" label="Last Name" component={renderField} type="text"/>

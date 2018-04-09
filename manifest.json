@@ -18,11 +18,10 @@
         "visible": true
     },{
         "id":"ac9310d1-2434-45dd-ae40-0b9b1b70673c",
-        "name":"Employee Grid",
         "groupId":"Group1", 
-        "title": "Employee List Grid",
+        "title": "Active Employees",
         "icon":"far fa-calendar-alt",
-        "tooltip": "Employee List Grid",
+        "tooltip": "Active Employees",
         "renderName": "employeegrid",
         "visible": true
     }]

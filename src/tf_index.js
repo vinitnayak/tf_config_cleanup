@@ -28,6 +28,9 @@ function renderApplication(elem,renderName){
     }else if(renderName===rname.RN_EMPLOYEE_GRID){
         renderEmployeeGrid(elem);
     }
+    else if(renderName==="calculateTaxes"){
+        calculateTaxes(elem);
+    }
 }
 var APP_ANCHOR;
 function setAppAnchor(elem){
@@ -59,7 +62,9 @@ function renderAddEmployeeForm(elem) {
         document.getElementById(elem));
 }
 
-module.exports = renderApplication;
+
+
+module.exports = renderApplication ;
 window.renderApplication = renderApplication;
 module.exports=appAnchor;
 window.appAnchor=appAnchor;

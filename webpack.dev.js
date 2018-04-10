@@ -8,7 +8,7 @@ module.exports = merge(baseConfig, {
 });
 if (process.env.NODE_ENV === "development") {
     var express = require('express')
-    const port = 8080;
+    const port = 9091;
     var app = express()
     app.use('/', express.static(BUILD_DIR))
     app.listen(port)

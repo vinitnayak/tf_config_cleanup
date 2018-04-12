@@ -66,7 +66,6 @@ module.exports ={
         new CopyWebpackPlugin([
             { from: './index.html', to: '../dist/index.html' },
             { from: './manifest.json', to: '../dist/manifest.json' },
-            { from: './tf.json', to: '../dist/tf.json' },
             {
                 context: './res',
                 from: '**/*',

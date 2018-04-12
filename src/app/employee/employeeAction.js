@@ -38,7 +38,7 @@ export function loadEmployeeSuccess(emps) {
 export function saveEmployee(values) {
   return function (dispatch,getState) {
     const state = getState();
-    return employeeApi.saveEmployee(values,state.appconf.SVCS_CONTEXT_URL).then(values => {
+    return employeeApi.saveEmployee(values).then(values => {
       dispatch(createEmployeeSuccess(values));
       return values;
     }).catch(error => {
@@ -55,7 +55,7 @@ export function createEmployeeSuccess(values) {
 export function deleteEmployee(emp) {
   return function(dispatch,getState) {
     const state = getState();
-    return employeeApi.deleteEmployee(emp,state.appconf.SVCS_CONTEXT_URL).then(() => {
+    return employeeApi.deleteEmployee(emp).then(() => {
       console.log(`Deleted ${emp.id}`)
       dispatch(deleteEmployeeSuccess(emp));
       return;

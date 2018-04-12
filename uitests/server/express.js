@@ -15,12 +15,12 @@ const apiversion = 'v1';
 const post = 'POST';
 const get = 'GET';
 const mdelete = 'DELETE';
+const put = 'PUT';
 /**
  * approuter
  * @param {*} app 
  */
 approuter = (app) => {
-    //TF REST Calls
     app.get('/*', function (req, res) {
         callServiceRequestGet(req.url, res);
     });
@@ -29,6 +29,9 @@ approuter = (app) => {
     });
     app.delete('/*', function (req, res) {
         callServiceRequestDelete(req.url, res);
+    });
+    app.put('/*', function (req, res) {
+        callServiceRequestPut(req.url, req.body, res);
     });
 }
 /**
@@ -66,7 +69,7 @@ callServiceRequestPost = (requrl, postData, res) => {
 /**
  * callServiceRequestDelete
  * @param {*} requrl 
-  * @param {*} res 
+ * @param {*} res 
  */
 callServiceRequestDelete = (requrl, res) => {
     const options = {
@@ -82,8 +85,28 @@ callServiceRequestDelete = (requrl, res) => {
     }).pipe(res);
 }
 /**
- * Start Express Server localhost@port
+ * callServiceRequestPut
+ * @param {*} requrl 
+ * @param {*} putData 
+ * @param {*} res 
  */
+callServiceRequestPut = (requrl, putData, res) => {
+    const options = {
+        method: put,
+        body: putData,
+        json: true,
+        url: `${host}${port}${requrl}`,
+    };
+    request(options, function (err, res, body) {
+        if (err) {
+            console.error('error posting json: ', err)
+            throw err
+        }
+    }).pipe(res);
+}
+/**
+ * Start Express Server localhost@port 
+ **/
 if (process.env.NODE_ENV === "development" || process.env.NODE_ENV === 'production') {
     var express = require('express')
     const port = 9091;
